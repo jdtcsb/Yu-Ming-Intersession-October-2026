@@ -51,17 +51,16 @@ body{
   padding: 5px;
   width:100%;
   top:0;
-  
   height:8vh;
 }
 
 #left-nav{
+  position:relative;
   width:10%;
   display:inline-block;
   text-align: center;
   padding: 0px 20px;
-  height:100%;
-  z-index:10;
+  height:100% !important; 
 }
 
 #left-nav a {
@@ -73,6 +72,7 @@ body{
   margin: auto;
   transition: 0.4s;
   transition-timing-function: ease-out;
+  z-index:10;
 }
 
 #nav-logo:hover{
@@ -81,12 +81,12 @@ body{
 
 /* navbar links */
 .navbar-links{
-  position:absolute;
+  position:relative;
   top:0;
   right:0;
   display:inline-block;
   height:8vh;
-  width:100%;
+  width:80%;
   text-align: center;
   line-height:8vh;
 }
